@@ -1,0 +1,431 @@
+/* ==== Font link ==== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ===== common css ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+    --second-color: #ea891b;
+    --skills-color: #71f307;
+    --copy-color: #4b5464;
+}
+
+
+html {
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.container{
+    margin: 0 auto;
+    padding: 2rem 9% 2rem;
+}
+
+span{
+    color: var(--main-color);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header .logo{
+    font-size: 1.9rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header .navbar ul li{
+    float: left;
+} 
+.header .navbar ul li a{
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-left: 3rem;
+    transition: 0.3s;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.4rem;
+    color: var(--text-color);
+    display: none;
+}
+
+/* ==== Home Part Start ==== */
+#home{
+    min-height: 100vh;
+    padding: 8.6rem 0 5.5rem;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-info h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.home-info h3 span{
+    color: var(--main-color);
+}
+.home-info h1{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.4rem;
+}
+.home-info p{
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+.home-img{
+    width: 500px;
+    margin-left: 8rem;
+}
+.home-img img{
+    width: 25vw;
+    border: 0.7rem solid var(--main-color);
+    border-radius: 50%;
+}
+.home-info .social-media ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.home-info .social-media ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    transition: .5s ease;
+}
+.home-info .social-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+}
+.btn{
+    margin: 1rem 0;
+    display: inline-block;
+    padding: 0.6rem 1.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: .8rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+
+}
+.btn:hover{
+    box-shadow: none;
+}
+
+/* ==== About Section Part ==== */
+#about{
+    background: var(--second-bg-color);
+    padding: 5.5rem 0;
+}
+.about-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.about-img img{
+    width: 25vw;
+    border: .2rem solid var(--main-color);
+    margin-right: 5rem;
+}
+.about-info h2{
+    font-size: 2.8rem;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 1rem;
+}
+.about-info h3{
+    font-size: 1.2rem;
+    color: var(--main-color);
+    margin-bottom: .4rem;
+}
+.about-info p{
+    font-size: .85rem;
+    margin-bottom: .6rem;
+}
+
+/* ==== My Skills ==== */
+#skills{
+    padding: 5.5rem 0;
+}
+.my-skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.my-skills .skills-info h2{
+    margin: 0;
+    font-size: 2.8rem;
+}
+.my-skills .skills-info p{
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+.skills-info .skills-icon ul li{
+    border-left: .6rem solid var(--skills-color);
+    width: 13.5rem;
+    padding: .6rem 1.3rem;
+    margin-bottom: .5rem;
+    background: var(--second-bg-color);
+    cursor: pointer;
+}
+.skills-info .skills-icon ul li a{
+    color: var(--text-color);
+}
+.skill-box , .swiper{
+    width: 31rem;
+    height: 18rem;
+    margin-right: 1rem;
+    background: var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill {
+    position: absolute;
+    background: var(--bg-color);
+    border-radius: 50%;
+}
+ .skill .outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 1.2rem;
+}
+.skill .outer .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: var(--second-bg-color);
+}
+.skill .outer .inner h3{
+    font-size: 1rem;
+}
+.skill .outer .inner .number {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.skill .outer .inner .number {
+    color: var(--skills-color);
+}
+.skill svg circle {
+    fill: none;
+    stroke-width: 1.2rem;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    transition: 2s linear;
+   
+}
+.skill svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.skill circle {
+    stroke: var(--skills-color);
+}
+
+/* ==== My Projects ==== */
+#projects{
+    background: var(--second-bg-color);
+    padding: 5.5rem 0;
+
+}
+.project-content h2{
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.swiper-slide{
+    width: 17.8rem;
+    height: 20rem;
+    padding: .4rem;
+    border-radius: 1rem;
+}
+#slide-bg{
+    background: var(--bg-color);
+}
+.swiper-slide .web-img img {
+    display: block;
+    width: 100%;
+    border-radius: .9rem;
+}
+.swiper-slide .web-info h2{
+    margin: 0;
+    padding: 0;
+}
+.swiper-slide .web-info p{
+    margin: 1rem;
+    text-align: center;
+    font-size: .8rem;
+}
+.swiper-slide .web-info .visit-btn{
+    padding: .5rem 1.5rem;
+    background: var(--skills-color);
+    color: var(--bg-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: .7rem;
+    margin-left: 5.6rem;
+}
+
+/* ==== Contact section part ==== */
+#contact{
+    padding: 5.5rem 0;
+}
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-section .contact-info h2{
+    font-size: 2.8rem;
+}
+.contact-section .contact-info p{
+    font-size: .95rem;
+}
+.contact-info .con-info form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-info .con-info form input,
+.contact-info .con-info form textarea{
+    width: 28rem;
+    margin-top: .7rem;
+    padding: .4rem;
+    background: var(--second-bg-color);
+    border: .11rem solid var(--second-bg-color);
+    color: var(--text-color);
+}
+.contact-info .con-info form .cont-btn{
+    color: var(--second-bg-color);
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    margin-top: 1.4rem;
+    width: 6.2rem;
+    height: 2.4rem;
+    background: var(--skills-color);
+}
+.contact-section .location p{
+    font-size: .85rem;
+    margin-bottom: .7rem;
+}
+.contact-section .location p:hover{
+    text-decoration: underline;
+}
+.contact-section .location .location-box{
+    overflow: hidden;
+    width: 28rem;
+    height: 15rem;
+}
+
+/* ==== Footer Part ==== */
+#footer{
+    background: var(--second-bg-color);
+}
+.footer-item{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info h2, .footer-skills h2{
+    font-size: 2rem;
+    margin-bottom: .1rem;
+}
+.footer-info p{
+    font-size: .9rem;
+    margin-bottom: .7rem;
+}
+.footer-skills ul li{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--second-color);
+}
+.footer-info .social-media ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-info .social-media ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    transition: .5s ease;
+}
+.footer-info .social-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+}
+#footer .copy{
+    padding: .3rem;
+    background: var(--copy-color);
+}
+#footer .copy p{
+    font-size: .74rem;
+    text-align: center;
+    color: var(--text-color);
+}
